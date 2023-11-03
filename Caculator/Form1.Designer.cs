@@ -109,6 +109,7 @@ namespace Caculator
             // 
             // button2
             // 
+            this.button2.ForeColor = System.Drawing.Color.Red;
             this.button2.Location = new System.Drawing.Point(304, 253);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
