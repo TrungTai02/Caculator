@@ -29,7 +29,7 @@ namespace Caculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_cong = new System.Windows.Forms.Button();
             this.txtA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,14 +41,15 @@ namespace Caculator
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_cong
             // 
-            this.button1.Location = new System.Drawing.Point(207, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_cong.Location = new System.Drawing.Point(207, 253);
+            this.btn_cong.Name = "btn_cong";
+            this.btn_cong.Size = new System.Drawing.Size(75, 23);
+            this.btn_cong.TabIndex = 0;
+            this.btn_cong.Text = "Cộng";
+            this.btn_cong.UseVisualStyleBackColor = true;
+            this.btn_cong.Click += new System.EventHandler(this.btn_cong_Click);
             // 
             // txtA
             // 
@@ -97,7 +98,6 @@ namespace Caculator
             this.label3.TabIndex = 6;
             this.label3.Text = "Kết quả";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtKetQua
             // 
@@ -149,10 +149,9 @@ namespace Caculator
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_cong);
             this.Name = "Form1";
             this.Text = "Tính Toán";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +159,7 @@ namespace Caculator
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_cong;
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
